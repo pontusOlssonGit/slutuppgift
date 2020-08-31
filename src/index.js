@@ -1,16 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/App.js';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <div>
-    <h1>My favo</h1>
-    <ul>
-      <li>Basson</li>
-    </ul>
-  </div>,
+  <App />,
   document.getElementById('root')
 );
 
