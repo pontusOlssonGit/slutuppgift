@@ -1,9 +1,22 @@
 import React from "react"
+import { AppBar, Toolbar, Typography } from "@material-ui/core"
+import TodayIcon from '@material-ui/icons/Today';
 
-function Header(){
-    return <nav className="navbar navbar-light bg-light">
-    <span className="navbar-brand mb-0 h1">ToDo</span>
-  </nav>
+
+
+const Header = () =>{
+  return(
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h4">Notie.js</Typography>
+        <TodayIcon/>
+      </Toolbar>
+
+    </AppBar>
+  )
+
 }
-
 export default Header
+
+
+

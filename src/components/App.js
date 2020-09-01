@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import { Grid } from '@material-ui/core';
+import { Grid, Container } from '@material-ui/core';
 import Header from "./Header.js"
 import Footer from "./Footer.js"
 import Note from "./Note.js"
@@ -16,27 +16,38 @@ function App(){
         })
     }
 
+    return( 
     
-    return <div className="app">
-       
-        <Header />
+        <div className="app">
+        
+        <Grid container direction="column">
+            <Grid item><Header /></Grid>
+        </Grid>
+
+        
+        <Container maxWidth="lg">
+        
         <Textfield onAdd={addNote}/>
-        <Grid container spacing={0}>
-        <Grid container item xs={12} spacing={0} justify="center">
+       
+        <Grid container direction="row">
         {notes.map((noteItem) => {
-            return <Note
+            return (
+            <Grid item xs={12} sm={6} lg={4}>
+            <Note
             title={noteItem.title}
             content={noteItem.content}
             />
+            </Grid>
+            )
+            
         })}
-         </Grid>
         </Grid>
+
         <Footer />
-
-
-
         
+        </Container>
     </div>
+    )
 }
 
 export default App

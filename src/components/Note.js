@@ -1,12 +1,15 @@
 import React from 'react'
-import { Card, CardContent, Typography } from '@material-ui/core'
+import { Card, CardContent, Typography, Checkbox, FormControlLabel} from '@material-ui/core'
+
 
 
 function Note (props){
+
+    
     
     
     return (
-      
+        
         <Card className="card">
 
         <CardContent>
@@ -17,8 +20,27 @@ function Note (props){
         <p className="card-text">{props.content}</p>
         </Typography>
         </CardContent>
+
         
+        <FormControlLabel
+          value="bottom"
+          control={<Checkbox color="secondary" />}
+          label="Delete note"
+          labelPlacement="end"
+        />
+        <FormControlLabel
+          value="bottom"
+          control={<Checkbox color="secondary" />}
+          label="Finished"
+          labelPlacement="start"
+        />
+        
+
+
         </Card>
+        
+        
+        
         
     )
 }
