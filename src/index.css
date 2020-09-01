@@ -18,11 +18,12 @@ footer{
 
 .card{
   margin-top: 2rem;
-  width: 29rem;
+  text-align: center;
+  
+  
+}
+.form{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-.textfield{
-  margin-left: 25vw;
-  width: 50vw;
-  background-color: white;
-}
