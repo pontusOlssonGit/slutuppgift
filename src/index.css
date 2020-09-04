@@ -1,18 +1,8 @@
-form{
-  text-align: center;
-  margin-top: 1rem;
+body{
+  background-image: url("https://images.unsplash.com/photo-1531811027466-d90d527b4424?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; 
 }
 
-.card{
-  text-align: center;
-  margin: 1rem;
-}
-.input{
-  margin: 1rem;
-}
-.content{
-  margin: 1rem;
-}
-.submitButton{
-  margin: 1rem;
-}
+
